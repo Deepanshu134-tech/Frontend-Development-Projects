@@ -1,5 +1,5 @@
 Web Development Projects | Saiket Systems Internship
-This repository contains a collection of frontend projects built during my internship at Cognifyz Technologies. These projects demonstrate my skills in HTML, CSS, JavaScript, and responsive design, focusing on practical UI/UX implementation.
+This repository contains a collection of frontend projects built during my internship at Saiket Systems. These projects demonstrate my skills in HTML, CSS, JavaScript, and responsive design, focusing on practical UI/UX implementation.
 
 📌 Projects Overview
 1. Basic Quiz Application
