@@ -1,0 +1,150 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft pink gradient */
+  color: #333;
+}
+
+.todo-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.input-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#task-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#task-input:focus {
+  border-color: #ff6f61; /* Coral color for focus */
+}
+
+#add-task-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6f61; /* Coral color */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #ff4a3d; /* Darker coral on hover */
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.task-item.completed {
+  background-color: #e9ecef;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item .task-text {
+  flex: 1;
+  margin: 0 1rem;
+  font-size: 1.1rem;
+}
+
+.task-item .task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-item button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #ddd;
+}
+
+.task-item .edit-btn {
+  color: #3498db; 
+}
+
+.task-item .delete-btn {
+  color: #e74c3c; 
+}
+
+.task-item .complete-btn {
+  color: #2ecc71; 
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    padding: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  #add-task-btn {
+    width: 100%;
+  }
+}
